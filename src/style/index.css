@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  /* caret-color: transparent; */
+}
+
+p {
+  margin: 0px;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.border-0 {
+  border: 0px !important;
+}
+
+.app {
+  background: url(../assets/images/background.png);
+  background-size: cover;
+  height: auto;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 92px;
+  padding: 0px 16px;
+}
+
+.header-text {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.header-blue {
+  color: #6b66d8;
+}
+
+.card-container {
+  border-radius: 30px;
+  padding: 22px 46px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  align-self: stretch;
+}
+
+.home-main-div {
+  height: auto;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 0px;
+}
+
+.default-home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+  width: 100%;
+}
+
+.default-card-city {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.city-name {
+  color: #ffffff;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  max-width: 122px;
+}
+
+.date-today {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Poppins";
+}
+
+.temp-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thermometer-img {
+  margin-bottom: 24px;
+  margin-right: 4px;
+}
+
+.weather-info-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 6px;
+  width: 45%;
+  min-width: 45%;
+  white-space: nowrap;
+}
+
+.weather-params-label {
+  margin-left: 4px;
+}
+
+.search-card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-city-container {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.28);
+  stroke-width: 1px;
+  stroke: rgba(255, 255, 255, 0.28);
+  height: 50px;
+  border-radius: 10px;
+  width: 290px;
+  margin-top: 50px;
+}
+
+.search-card-layout {
+  width: 320px;
+}
+
+.city-results {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.search-city-suggestions {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.28);
+  stroke-width: 1px;
+  stroke: rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  width: 290px;
+  box-sizing: border-box;
+}
+
+.suggested-label {
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.suggested-label:hover {
+  background: rgba(255, 255, 255, 0.23);
+}
+
+.search-icon {
+  position: absolute;
+  top: 5px;
+  left: 12px;
+}
+
+.city-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 60px;
+  height: 100%;
+}
+
+.city-input {
+  color: white;
+  font-size: 24px;
+}
+
+.city-input::placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+/* Search result screen style */
+.search-result-container-div {
+  padding: 64px 53px;
+  /* text-align: center; */
+}
+
+.forecast-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-blue {
+  color: #99daff;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.day-forecast-container {
+  text-align: center;
+}
+
+.label-18 {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.hourly-forecast-container {
+  width: 100%;
+}
+
+.hourly-forecast-card-layout {
+  width: 100%;
+  overflow: auto;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+}
+
+.hourly-forecast-card-layout::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.hourly-card-main-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hourly-title-container {
+  position: relative;
+}
+
+.hourly-navigation-arrow {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+#right-nav-btn,
+#left-nav-btn {
+  margin-left: 16px;
+}
+
+.hour-comp-main-div {
+  text-align: center;
+  padding: 12px 24px;
+  flex-grow: 1;
+}
+
+.time-highlight {
+  border-radius: 30px;
+  background: rgba(28, 4, 68, 0.2);
+}
+
+.current-time-metrix {
+  width: 65%;
+  margin-top: 60px;
+}
+
+.unit-metrix-container {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.unit-metrix-main-div {
+  flex-grow: 1;
+  border-radius: 20px;
+  column-gap: 6px;
+  padding: 24px;
+  width: 45%;
+}
+
+.unit-metrix-card-layout {
+  padding: 24px;
+}
+
+.seven-day-forecast-card-layout {
+  width: 35%;
+  margin-top: 60px;
+}
+
+.single-day {
+  border-bottom: 1px solid #7670e9;
+  padding: 6px 0px;
+}
+
+.temp-graph-card-layout {
+  margin-top: 50px;
+}
+
+.time-format-text {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 4px;
+}
+
+.copyright-text {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
